@@ -10,14 +10,43 @@
         background-color: #1a1a1a;
         text-align: justify;
       }
+      body {
+        background: linear-gradient(270deg, #1a1a1a, #0d0d0d, #1a1a1a);
+        background-size: 600% 600%;
+        animation: gradientBG 15s ease infinite;
+      }
+      @keyframes gradientBG {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+      }
       article {
-        color: black;
+        color: #1a1a1a;
         background-color: #7df9ff;
         border: none;
         border-radius: 15px;
         margin: 15px;
-        padding: 10px;
+        padding: 15px;
         text-align: justify;
+        box-shadow: 0 0 20px #00f5ff, 0 0 40px #7df9ff;
+      }
+      a {
+        color: #ff00ff;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #7df9ff;
+        text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+        transform: translateY(-3px);
+        transition: 0.3s;
+      }
+      h1, h2 {
+        text-shadow: 0 0 5px #00f5ff, 0 0 10px #7df9ff;
+      }
+      p, li {
+        text-shadow: 0 0 3px #00f5ff;
       }
     </style>
   </head>
@@ -42,9 +71,9 @@
       <article>
         <h2>about dogs 🐶:</h2>
         <ul>
-          <li><a href="https://ashley3013-sys.github.io/Myweb/index.html"></a></li>
-          <li><a href="https://ashley3013-sys.github.io/Myweb2/index.html"></a></li>
-          <li><a href="https://ashley3013-sys.github.io/Myweb3/index.html"></a></li>
+          <li><a href="https://ashley3013-sys.github.io/Myweb/index.html">About Dogs 1</a></li>
+          <li><a href="https://ashley3013-sys.github.io/Myweb2/index.html">About Dogs 2</a></li>
+          <li><a href="https://ashley3013-sys.github.io/Myweb3/index.html">About Dogs 3</a></li>
         </ul>
       </article>
       <article>
